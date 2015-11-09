@@ -15,7 +15,8 @@ Pod::Spec.new do |s|
   }
   s.source_files = 'BMGlyphLabel/*.{h,m}'
   s.homepage = 'https://github.com/tapouillo/BMGlyphLabel'
-  s.platform     = :ios, '7.0'
+  s.platforms = { :ios => "7.0", :tvos => "9.0" }  
+
   s.ios.frameworks = 'SpriteKit'
   s.requires_arc = true
 end
